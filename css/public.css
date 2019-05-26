@@ -58,8 +58,8 @@ html body > * { display: inline-block; float: left; height: 100%; }
 .dialog .header .func a + a { margin-right: 8px; }
 .dialog .header .func a:hover { color: #6a1b8a; }
 .dialog .header .func a:before { display: inline-block; line-height: 35px; }
-.dialog .header .alert { position: absolute; bottom: -32px; left: 0; display: none; width: 100%; height: 32px; padding: 5px 10px; background-color: whitesmoke; z-index: 2; text-align: left; color: #696868; font-size: 14px; border-top: 1px solid #efefef; -moz-box-shadow: 0px 2px 0px 0px rgba(193, 193, 193, 0.22); -webkit-box-shadow: 0px 2px 0px 0px rgba(193, 193, 193, 0.22); box-shadow: 0px 2px 0px 0px rgba(193, 193, 193, 0.22); }
-.dialog .header .alert:before { font-size: 14px; color: #623e79; margin-right: 10px; line-height: 21px; }
+.dialog .header .alert { position: absolute; bottom: -32px; left: 0; display: none; width: 100%; height: 32px; line-height: 32px; z-index: 2; text-align: left; color: #696868; font-size: 14px; border-top: 1px solid #efefef; background-color: white; -moz-box-shadow: 0px 1px 1px rgba(193, 193, 193, 0.22); -webkit-box-shadow: 0px 1px 1px rgba(193, 193, 193, 0.22); box-shadow: 0px 1px 1px rgba(193, 193, 193, 0.22); }
+.dialog .header .alert:before { font-size: 14px; color: #623e79; margin: 0 10px; }
 .dialog .body { height: calc(100% - 70px - 95px); overflow-y: scroll; }
 .dialog .body::-webkit-scrollbar { width: 2px; }
 .dialog .body .message-main { display: inline-block; width: 100%; text-align: left; }
@@ -93,7 +93,7 @@ html body > * { display: inline-block; float: left; height: 100%; }
 .bulletin .header > span { position: relative; display: inline-block; width: 49%; height: 100%; line-height: 50px; font-size: 15px; }
 .bulletin .header > span.active { border-bottom: 3px solid #794179; }
 .bulletin .body { display: inline-block; width: 100%; height: calc(100% - 50px); }
-.bulletin .body .note-box { display: inline-block; margin-top: 15px; width: calc(100% - 25px); background-color: white; -moz-box-shadow: 0px 1px 2px 0px rgba(204, 204, 204, 0.58); -webkit-box-shadow: 0px 1px 2px 0px rgba(204, 204, 204, 0.58); box-shadow: 0px 1px 2px 0px rgba(204, 204, 204, 0.58); }
+.bulletin .body .note-box { display: inline-block; margin-top: 15px; width: calc(100% - 25px); background-color: white; -moz-box-shadow: 0px 0px 1px rgba(140, 140, 140, 0.3); -webkit-box-shadow: 0px 0px 1px rgba(140, 140, 140, 0.3); box-shadow: 0px 0px 1px rgba(140, 140, 140, 0.3); }
 .bulletin .body .note-box > * { display: inline-block; float: left; }
 .bulletin .body .note-box .avatar { width: 50px; height: 50px; padding: 10px; overflow: hidden; }
 .bulletin .body .note-box .avatar img { width: 35px; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; }
@@ -103,5 +103,5 @@ html body > * { display: inline-block; float: left; height: 100%; }
 .bulletin .body .note-box .speaker time { font-size: 12px; color: gray; }
 .bulletin .body .note-box .post { width: 100%; padding: 10px; text-align: left; font-size: 14px; }
 .bulletin .body .note-box .post p { margin: 0 auto; }
-.bulletin .body .note-box .action { width: 100%; height: 25px; line-height: 25px; padding-left: 10px; background-color: #ececec; font-size: 12px; text-align: left; color: #3b293f; }
+.bulletin .body .note-box .action { width: 100%; height: 25px; line-height: 25px; padding-left: 10px; font-size: 12px; text-align: left; color: #3b293f; border-top: 1px solid #efefef; }
 .bulletin .body .note-box .action span { color: #543965; margin-right: 5px; cursor: pointer; }
