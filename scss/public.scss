@@ -286,6 +286,11 @@ html {
     .me {
       width: 300px;
       padding: 10px 20px;
+
+      @include range-width(0, 820px) {
+        width: 250px;
+      }
+
       > * {
         display: block;
         text-align: left;
@@ -316,6 +321,10 @@ html {
       width: calc(100% - 300px);
       padding-top: 20px;
       padding-right: 20px;
+
+      @include range-width(0, 820px) {
+        width: calc(100% - 250px);
+      }
 
       a {
         float: right;
@@ -387,6 +396,9 @@ html {
         > * {
           display: inline-block;
           float: left;
+          @include range-width(0, 820px) {
+             max-width: 220px;
+          }
         }
 
         .avatar {
